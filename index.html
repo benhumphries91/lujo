@@ -10,7 +10,7 @@
 				<div ng-repeat="villa in property.villa" class="">
 					<h3>
 						{{villa.name}}
-						<em class="pull-right">{{villa.price}}</em>
+						<em class="pull-right">{{villa.price | currency : '£'}}</em>
 					</h3>
 					<p>{{villa.description}}</p>
 				</div>
