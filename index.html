@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="lujo">
+	<head>
+	<base href="/lujo/">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<main class="container">
+			<div ng-controller="PropertyController as property" class="product row">
+				<div ng-repeat="villa in property.villa" class="">
+					<h3>
+						{{villa.name}}
+						<em class="pull-right">{{villa.price}}</em>
+					</h3>
+					<p>{{villa.description}}</p>
+				</div>
+			</div>
+		</main>
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<!-- // <script type="text/javascript" src="dist/assets/js/app.min.js"></script> -->
+		<script type="text/javascript" src="src/scripts/app.js"></script>
+
+	</body>
+</html>
